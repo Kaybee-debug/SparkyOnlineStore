@@ -1,0 +1,11 @@
+
+{%load crispy_forms_tags %} 
+<div style="width:95%">
+
+<form method="POST"  enctype="multipart/form-data">
+    {%csrf_token%}
+    {% crispy form %}
+    <button type="submit">Submit</button> 
+</form> 
+</div>
+
