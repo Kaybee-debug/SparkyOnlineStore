@@ -1,11 +1,15 @@
+<form method="post" enctype="multipart/form-data">
+    {%csrf_token%}
+    {{form.as_p}}
+    <button type="submit">Submit</button>
+</form>
+<!-- {%load crispy_forms_tags %} 
 
-{%load crispy_forms_tags %} 
-<div style="width:95%">
 
 <form method="POST"  enctype="multipart/form-data">
     {%csrf_token%}
     {% crispy form %}
     <button type="submit">Submit</button> 
-</form> 
-</div>
+</form>  -->
+
 
